@@ -24,15 +24,25 @@ public class TestLegaFootball {
 		g = new GestioneCampionato();
 	}
 
+	
+	/// testo se l'istanza della classe Campionato sia diversa da 'null'
+	
 	@Test
 	public void testPrimaIstanza() {
 		assertNotNull(c);
 	}
 	
+	
+	/// testo se l'istanza della classe GestioneCampionato sia diversa da 'null'
+	
 	@Test
 	public void testSecondaIstanza() {
 		assertNotNull(g);
 	}
+	
+	
+	
+	/// qui creo le squadre, le aggiungo alla lista delle squadre e testo se i dati inseriti per ogni squadra sono validi
 	
 	@Test
 	public void testCreazioneSquadra() throws SquadraEsiste, SquadraNonValida{
@@ -50,6 +60,10 @@ public class TestLegaFootball {
 		assertTrue(s3.isValid());
 		
 	}
+	
+	
+	
+	/// qui testo se le squadre sono state inserite nella lista, ed in tal caso le dimensioni della stessa devono essere uguali al numero da noi indicato
 	
 	@Test
 	public void testListaSquadre() throws SquadraEsiste{

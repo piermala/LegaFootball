@@ -13,15 +13,10 @@ public class MainLegaFootball {
 		GestioneCampionato g = new GestioneCampionato();
 		Campionato c = new Campionato("Premier League");
 		
-		g.aggiungiSquadre(c);
-		
-		System.out.println(c.getSquadre() + "\n");
-		
+		g.aggiungiSquadre(c);		
 		
 		List<Squadra> squadre = g.getClassifica(c);
-		System.out.println(squadre + "\n");
-		
-		
+		System.out.println(squadre + "\n");		
 
 	}
 

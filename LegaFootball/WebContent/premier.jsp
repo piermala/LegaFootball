@@ -22,6 +22,7 @@
 
 <body>
 
+	<!--  BARRA DI NAVIGAZIONE -->
 	<nav class="navbar navbar-default" style="background-color: red;">
 	
 		<div class="container">
@@ -35,6 +36,8 @@
 		
 	</nav>
 
+	
+	<!-- CONTENUTO DELLA PAGINA -->
 	<div class="container">
 	
 		<h3 id="title">Classifica Premier League 2001-2002</h3>
@@ -63,12 +66,14 @@
 				
 					<%
 					
+					/// qui richiamiamo tutte le squadre dalla lista, con l'apposito metodo che le ordina in base ai punti ed alla differenza reti, e le inseriamo nella tabella tramite un ciclo for
+					
 					Campionato c = new Campionato("Premier League");
 					GestioneCampionato g = new GestioneCampionato();
 					
 					g.aggiungiSquadre(c);
 					
-					List<Squadra> squadre = c.getSquadre();
+					List<Squadra> squadre = g.getClassifica(c);
 					
 					for (int i=0; i < squadre.size(); i++){
 					

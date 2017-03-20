@@ -22,6 +22,7 @@
 
 <body>
 
+	<!--  BARRA DI NAVIGAZIONE -->
 	<nav class="navbar navbar-default" style="background-color: red;">
 	
 		<div class="container">
@@ -35,6 +36,8 @@
 		
 	</nav>
 
+	
+	<!-- CONTENUTO DELLA PAGINA -->
 	<div class="container">
 	
 		<h3 id="title">Squadra con la minor differenza reti</h3>
@@ -61,6 +64,8 @@
 			<tbody>
 				
 					<%
+					
+					/// richiamiamo il metodo che ci ritorna la squadra con la differenza reti più bassa e inseriamo i dati all'interno della riga di una tabella
 					
 					Campionato c = new Campionato("Premier League");
 					GestioneCampionato g = new GestioneCampionato();
